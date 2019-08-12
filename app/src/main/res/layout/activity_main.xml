@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lockscreen.lockscreen.MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="lockscreen"
+        android:text="一键锁屏"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="69dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:onClick="getadmin"
+            android:text="获取权限"
+            tools:layout_editor_absoluteX="62dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:onClick="rmadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消权限"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

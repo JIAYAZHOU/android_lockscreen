@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">定时锁屏</string>
+
+    <string name="sample_device_admin">管理员权限</string>
+    <string name="sample_device_admin_description">管理员权限2</string>
+
+</resources>
